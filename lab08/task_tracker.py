@@ -13,9 +13,19 @@ def main():
 
         choice = input("Choose an option: ")
 
-        if choice == "4":
+        if choice == "1":
+            task_name = input("Enter a task name: ").strip()
+
+            if task_name:
+                tasks.append(task_name)
+                print("Task added successfully!")
+            else:
+                print("Task name cannot be empty.")
+
+        elif choice == "4":
             print("Goodbye!")
             break
+
         else:
             print("This feature will be added later.")
 
