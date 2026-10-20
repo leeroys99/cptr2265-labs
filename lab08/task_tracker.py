@@ -30,6 +30,30 @@ def main():
                     print(f"{number}. {task}")
             else:
                 print("No tasks have been added yet.")
+                
+                
+                
+        elif choice == "3":
+            if tasks:
+                print("\nYour Tasks:")
+                for number, task in enumerate(tasks, start=1):
+                    print(f"{number}. {task}")
+
+                task_number = input("Enter the task number to complete: ")
+
+                if task_number.isdigit():
+                    index = int(task_number) - 1
+
+                    if 0 <= index < len(tasks):
+                        completed_task = tasks.pop(index)
+                        print(f"Completed task: {completed_task}")
+                    else:
+                        print("Invalid task number.")
+                else:
+                    print("Please enter a valid number.")
+            else:
+                print("No tasks available to complete.")
+
 
 
         elif choice == "4":
