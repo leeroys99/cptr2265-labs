@@ -1,0 +1,4 @@
+Lab 08 Merge Conflict Practice
+
+Status: Not started
+Description: This file will be used to practice resolving a merge conflict.
