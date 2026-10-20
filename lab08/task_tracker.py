@@ -21,6 +21,16 @@ def main():
                 print("Task added successfully!")
             else:
                 print("Task name cannot be empty.")
+                
+                
+        elif choice == "2":
+            if tasks:
+                print("\nYour Tasks:")
+                for number, task in enumerate(tasks, start=1):
+                    print(f"{number}. {task}")
+            else:
+                print("No tasks have been added yet.")
+
 
         elif choice == "4":
             print("Goodbye!")
